@@ -7,8 +7,8 @@ import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls
 
 const Element = function (id, x, y, z, ry) {
   const div = document.createElement('div')
-  div.style.width = '480px'
-  div.style.height = '360px'
+  div.style.width = '240px'
+  div.style.height = '180px'
   div.style.backgroundColor = '#FFFFFF'
   div.innerHTML = `
     <div>1.請問你的性別</div>
@@ -136,7 +136,7 @@ export default function Arjs ({ item }) {
 
     // const markerScene = new THREE.Scene()
     // markerGroup.add(markerScene)
-    markerGroup.add(new Element('xBOqwRRj82A', 0, 0, 240, 0))
+    markerGroup.add(new Element('xBOqwRRj82A', 0, 0, 120, 0))
     // markerGroup.add(new Element('x4q86IjJFag', 240, 0, 0, Math.PI / 2))
     // markerGroup.add(new Element('JhngfOK_2-0', 0, 0, -240, Math.PI))
     // markerGroup.add(new Element('Grg3461lAPg', -240, 0, 0, -Math.PI / 2))
