@@ -1,0 +1,29 @@
+{
+  "editor.defaultFormatter": null,
+  "javascript.validate.enable": false,
+  "editor.formatOnSave": false,
+  "[prisma]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+  ],
+  "standard.autoFixOnSave": true,
+  "tailwindCSS.includeLanguages": { "typescriptreact": "html" }
+}
