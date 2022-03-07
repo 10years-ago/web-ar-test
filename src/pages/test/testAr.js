@@ -75,6 +75,7 @@ export default function Arjs ({ item }) {
       const video = document.getElementById('arjs-video')
       video.style.right = '0px'
       video.style.left = 'unset'
+      video.style.objectFit = 'cover'
       arToolkitSource.onResizeElement()
       arToolkitSource.copyElementSizeTo(renderer.domElement)
       if (arToolkitContext.arController !== null) {
@@ -134,22 +135,8 @@ export default function Arjs ({ item }) {
       // const rotation = item.rotation?.split(' ')
       // const scale = item.scale?.split(' ')
       // gltf.scene.position.set(position[0] || 0, position[1] || 0, position[2] || 0)
-      // gltf.scene.rotation.set(
-      //   rotation[0] ? (parseInt(rotation[0]) / 180) * P : 0,
-      //   rotation[1] ? (parseInt(rotation[1]) / 180) * P : 0,
-      //   rotation[2] ? (parseInt(rotation[2]) / 180) * P : 0
-      // )
       gltf.scene.scale.set(0.5, 0.5, 0.5)
       markerScene.add(gltf.scene)
-      // 啟動gui加速，加載一些複雜的素材
-      // gltf.scene.traverse(function (child) {
-      //   console.log(child.name) ↓↓↓↓↓↓↓
-      // })
-      // const object = gltf.scene.getObjectByName('SheenChair_fabric') // 這裡放上面的child.name
-      // console.log(object)
-      // const gui = new GUI()
-      // gui.add(object.material, 'sheen', 0, 1)
-      // gui.open()
     },
     (xhr) => {
       if (loadingNum !== parseInt(xhr.loaded / xhr.total * 100)) {

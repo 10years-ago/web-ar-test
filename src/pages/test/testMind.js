@@ -57,6 +57,7 @@ const MindARViewer = ({ item }) => {
       // 調整顯示區域，適應移動端
       const video = document.getElementsByTagName('video')
       video[0].style.right = '0px'
+      video[0].style.objectFit = 'cover'
       renderer.setAnimationLoop(() => {
         video[0].style.left = 'unset'
         renderer.render(scene, camera)
